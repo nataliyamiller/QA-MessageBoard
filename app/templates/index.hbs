@@ -1,0 +1,9 @@
+<h2>Welcome to our Question and Answer Board</h2>
+
+<h3>This is a list of submitted questions</h3>
+
+<ul>
+  {{#each model as |question|}}
+    <li>Question: {{question.content}}, Author: {{question.question.Author}}</li>
+  {{/each}}
+</ul>
