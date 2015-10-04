@@ -4,6 +4,8 @@
 
 <ul>
   {{#each model as |question|}}
-    <li>Question: {{question.content}}, Author: {{question.question.Author}}</li>
+    {{question-tile question=question updateQuestion="updateQuestion" deleteQuestion="deleteQuestion"}}
   {{/each}}
 </ul>
+
+{{new-question saveQuestion="saveQuestion"}}
