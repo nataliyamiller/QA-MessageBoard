@@ -1,0 +1,16 @@
+<h2>Question: {{question.content}}</h2>
+<h4>Author: {{question.questionAuthor}}</h4>
+<br>
+<button {{action 'deleteQuestion' question}}>Delete question</button>
+{{update-question question=model updateQuestion="updateQuestion"}}
+
+<p>Add new answer to this question</p>
+{{new-answer saveAnswer="saveAnswer" question=question}}
+
+<h4>Currently submitted answers by other users</h4>
+{{#each question.answers as |answer|}}
+  <div class="answerBox">
+    <p>{{answer.answerContent}}</p>
+    <p>Submitted by: {{answer.answerAuthor}}</p>
+  </div>
+  {{/each}}
