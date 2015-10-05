@@ -13,6 +13,8 @@ export default Ember.Component.extend({
         answerAuthor: this.get('answerAuthor') ? this.get('answerAuthor') : "",
         question: this.get('question') ? this.get('question') : ""
       };
+      this.set('anwerContent', ''),
+      this.set('answerAuthor', ''),
       this.set('addNewAnswer', false),
       this.sendAction('saveAnswer', params);
   }
