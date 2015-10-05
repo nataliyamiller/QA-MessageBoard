@@ -3,8 +3,8 @@
 <h4><span id="five">Author: </span><strong>{{question.questionAuthor}}</strong></h4>
 <h4><span id="six">Notes: </span> <strong>{{question.notes}}</strong></h4>
 <br>
+
 <button class="btn-danger" {{action 'deleteQuestion' question}}>Delete question</button>
-{{update-question question=model updateQuestion="updateQuestion"}}
 </div>
 
 <div class="col-md-1">
