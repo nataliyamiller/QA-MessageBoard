@@ -10,11 +10,22 @@
 	background-color: #F5F5DC;
 }
 
+#four {
+  color: blue;
+}
+
+#five {
+  color: blue;
+}
+
+#six {
+  color: blue;
+}
+
 .one {
   font-size: 25px;
   font-style: italic;
   font-weight: bold;
-
 }
 
 #two {

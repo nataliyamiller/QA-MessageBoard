@@ -1,6 +1,7 @@
 <div class="col-md-5 well">
-<h3>Question: <span class="one">{{question.content}}</span></h3>
-<h4>Author: {{question.questionAuthor}}</h4>
+<h3><span id="four">Question: </span> <span class="one">{{question.content}}</span></h3>
+<h4><span id="five">Author: </span><strong>{{question.questionAuthor}}</strong></h4>
+<h4><span id="six">Notes: </span> <strong>{{question.notes}}</strong></h4>
 <br>
 <button class="btn-danger" {{action 'deleteQuestion' question}}>Delete question</button>
 {{update-question question=model updateQuestion="updateQuestion"}}

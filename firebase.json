@@ -1,0 +1,9 @@
+{
+  "firebase": "question-and-answers",
+  "public": "app",
+  "ignore": [
+    "firebase.json",
+    "**/.*",
+    "**/node_modules/**"
+  ]
+}
