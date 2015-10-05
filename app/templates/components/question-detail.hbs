@@ -1,16 +1,26 @@
-<h2>Question: {{question.content}}</h2>
+<div class="col-md-5 well">
+<h3>Question: <span class="one">{{question.content}}</span></h3>
 <h4>Author: {{question.questionAuthor}}</h4>
 <br>
-<button {{action 'deleteQuestion' question}}>Delete question</button>
+<button class="btn-danger" {{action 'deleteQuestion' question}}>Delete question</button>
 {{update-question question=model updateQuestion="updateQuestion"}}
+</div>
 
-<p>Add new answer to this question</p>
+<div class="col-md-1">
+</div>
+
+<div class="col-md-6">
+  <br>
+<h4 class="add">Add new answer to this question!</h4>
 {{new-answer saveAnswer="saveAnswer" question=question}}
-
-<h4>Currently submitted answers by other users</h4>
+<br>
+<br>
+<h4>Answers by other users:</h4>
 {{#each question.answers as |answer|}}
   <div class="answerBox">
-    <p>{{answer.answerContent}}</p>
-    <p>Submitted by: {{answer.answerAuthor}}</p>
+    <ul>
+    <li class="answer"><span id="two"> Answer: </span><strong>{{answer.answerContent}}</strong>, <span id="three">Submitted by:</span><strong> {{answer.answerAuthor}}</strong></li>
+  </ul>
   </div>
   {{/each}}
+</div>

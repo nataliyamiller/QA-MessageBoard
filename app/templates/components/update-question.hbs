@@ -1,3 +1,4 @@
+<div>
 {{#if updateQuestionForm}}
   <h4>Update {{question.content}} question</h4>
     <div>
@@ -17,9 +18,10 @@
           {{input value=notes id="notes" placeholder=question.notes}}
         </div>
 
-        <button {{action 'updateQuestion' question}}>Save</button>
+        <button class="btn-success"{{action 'updateQuestion' question}}>Save</button>
       </form>
     </div>
 {{else}}
-  <button {{action 'updateQuestionForm'}}>Update Question</button>
+  <button class="btn-warning btn-block" {{action 'updateQuestionForm'}}>Update Question</button>
 {{/if}}
+</div>
