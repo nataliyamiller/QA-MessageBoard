@@ -12,10 +12,11 @@ export default Ember.Route.extend({
       newAnswer.save().then(function() {
         return question.save();
       });
+
       this.transitionTo('question', params.question);
   },
 
-  
+
     deleteQuestion(question) {
       question.destroyRecord();
       this.transitionTo('index');
