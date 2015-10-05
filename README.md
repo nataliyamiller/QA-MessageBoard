@@ -1,7 +1,10 @@
-# Qa-board
+# Question and Answer Message Board
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+####_by Nataliya Bareeva-Miller_
+
+##### October 3rd, 2015.
+
+On this website you can add questions and receive answers. It's finally here!
 
 ## Prerequisites
 
@@ -51,3 +54,8 @@ Specify what it takes to deploy your app.
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
 
+  ### Legal
+
+Copyright (c) 2015 **Nataliya Bareeva-Miller**
+
+This software is licensed under the [MIT License](https://github.com/nataliyamiller/basic-template-for-java-projects/blob/master/LICENSE.md)
