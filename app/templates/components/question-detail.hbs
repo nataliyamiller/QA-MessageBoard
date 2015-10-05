@@ -18,7 +18,7 @@
 {{#each question.answers as |answer|}}
   <div class="answerBox">
     <ul>
-    <li class="answer"><span id="two"> Answer: </span><strong>{{answer.answerContent}}</strong>, <span id="three">Submitted by:</span><strong> {{answer.answerAuthor}}</strong></li>
+    <li class="answer"><span id="two"> Answer: </span><strong>{{answer.answerContent}}</strong>, <span id="three">Submitted by:</span><strong> {{answer.answerAuthor}} on {{format-date answer.date_added}}</strong></li>
   </ul>
   </div>
   {{/each}}
