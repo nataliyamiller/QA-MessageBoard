@@ -6,6 +6,13 @@ export default Ember.Component.extend({
      this.sendAction('saveAnswer', params);
    },
 
+   voteUpAnswer(answer) {
+            this.sendAction('voteUpAnswer', answer);
+        },
+    voteDownAnswer(answer) {
+            this.sendAction('voteDownAnswer', answer);
+        },
+
    deleteAnswer(answer) {
        this.sendAction('deleteAnswer', answer);
    },

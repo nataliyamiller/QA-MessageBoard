@@ -12,6 +12,7 @@ export default Ember.Component.extend({
         answerContent: this.get('answerContent') ? this.get('answerContent') : "",
         answerAuthor: this.get('answerAuthor') ? this.get('answerAuthor') : "",
         date_added: Date.now(),
+        votes: 0,
         question: this.get('question') ? this.get('question') : ""
       };
       this.set('anwerContent', ''),

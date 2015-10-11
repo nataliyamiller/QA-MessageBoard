@@ -20,6 +20,9 @@
   <div class="answerBox">
     <ul>
     <li class="answer"><span id="two"> Answer: </span><strong>{{answer.answerContent}}</strong>, <span id="three">Submitted by:</span><strong> {{answer.answerAuthor}} on {{format-date answer.date_added}}</strong>
+      <strong>Vote results: {{answer.votes}}</strong>
+    <button class="glyphicon glyphicon-thumbs-up" {{action 'voteUpAnswer' answer}}></button>
+    <button class="glyphicon glyphicon-thumbs-down" {{action 'voteDownAnswer' answer}}></button>
     <button {{action 'deleteAnswer' answer}}>Delete asnwer</button>
     </li>
   </ul>
