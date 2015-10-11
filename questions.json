@@ -1,10 +1,10 @@
 { "questions": [{
     "content": "Do you like Portland, OR?",
     "questionAuthor": "Nataliya",
-    "notes": ""
+    "description": ""
   }, {
     "content": "What is your pet's name?",
     "questionAuthor": "Zeus",
-    "notes": ""
+    "description": ""
   }]
 }

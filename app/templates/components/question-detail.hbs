@@ -1,6 +1,7 @@
 <div class="col-md-5 well">
 <h3>Question: <span class="one">{{question.content}}</span></h3>
 <h4>Author: {{question.questionAuthor}}</h4>
+<h4>Description: {{question.description}}</h4>
 <br>
 <button class="btn-danger" {{action 'deleteQuestion' question}}>Delete question</button>
 </div>
@@ -18,7 +19,9 @@
 {{#each question.answers as |answer|}}
   <div class="answerBox">
     <ul>
-    <li class="answer"><span id="two"> Answer: </span><strong>{{answer.answerContent}}</strong>, <span id="three">Submitted by:</span><strong> {{answer.answerAuthor}} on {{format-date answer.date_added}}</strong></li>
+    <li class="answer"><span id="two"> Answer: </span><strong>{{answer.answerContent}}</strong>, <span id="three">Submitted by:</span><strong> {{answer.answerAuthor}} on {{format-date answer.date_added}}</strong>
+    <button {{action 'deleteAnswer' answer}}>Delete asnwer</button>
+    </li>
   </ul>
   </div>
   {{/each}}
